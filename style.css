@@ -11,6 +11,11 @@
   --color-light: #8695a4;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -34,6 +39,62 @@ header {
 .mobile-nav {
   display: flex;
   justify-content: flex-end;
+}
+
+.mobile-hamburger {
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.mobile-hamburger:hover {
+  background: #ddd;
+
+  border-radius: 4px;
+}
+
+.mobile-menu {
+  position: fixed;
+  transform: translateX(100%);
+  transition: transform 400ms ease-in;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--color-light);
+  z-index: 3;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.mobile_nav_links {
+  list-style-type: none;
+  padding: 2rem 0;
+}
+
+.mobile_nav_link_item + .mobile_nav_link_item {
+  margin-top: 0.25rem;
+}
+
+.mobile_nav_link_item a:hover {
+  color: #ffffff33;
+}
+
+.mobile_nav_link_item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile-nav__overlay.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 2;
 }
 
 .desktop-nav {
@@ -62,8 +123,8 @@ header {
   height: 170px;
   position: absolute;
   left: -5%;
-  z-index: -2;
   top: 3%;
+  z-index: -1;
 }
 .hero-article {
   text-align: center;
@@ -94,6 +155,7 @@ header {
 }
 
 .posts-controls {
+  margin-bottom: 1rem;
   align-items: center;
 }
 
