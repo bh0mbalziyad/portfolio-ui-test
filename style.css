@@ -1,0 +1,196 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --color-primary: #ff6464;
+  --color-secondary: #00a8cc;
+  --color-dark: #00a8cc;
+  --color-light: #8695a4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 0;
+}
+
+.hero-img-wrapper {
+  position: relative;
+}
+
+.hero-img {
+  width: 170px;
+  height: 170px;
+}
+
+.hero-img__bg {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: -5%;
+  z-index: -2;
+  top: 3%;
+}
+.hero-article {
+  text-align: center;
+}
+
+.hero_article__content {
+  max-width: 500px;
+}
+
+.hero_article__button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 1.15rem;
+  margin-top: 1rem;
+}
+
+.posts-section {
+  background-color: #edf7fa;
+  padding: 2rem 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-controls {
+  align-items: center;
+}
+
+.posts-controls__recent {
+  font-size: 1.25rem;
+}
+
+.posts-controls__view-all {
+  display: none;
+}
+
+.post-card__wrapper {
+  align-items: center;
+}
+
+.post-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  /* max-width: 420px; */
+}
+
+.post-card + .post-card {
+  margin-top: 1rem;
+}
+
+.post-card__info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  margin: 1rem 0;
+}
+
+.post-card__info > span.divider-vertical {
+  vertical-align: bottom;
+}
+
+.works-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.works-content {
+  margin-top: 1rem;
+}
+
+.work-card {
+  gap: 1rem;
+}
+
+/* .work-card__img {
+  max-width: 339px;
+} */
+
+.work-card__content {
+  text-align: start;
+}
+
+.work-card__info {
+  margin: 0.5rem 0;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.work-card__date {
+  background-color: #142850;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.horizontal-divider {
+  margin: 1rem 0;
+  border: 1px solid #e0e0e0;
+}
+
+.footer {
+  padding: 3rem 0rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons {
+  flex-direction: row;
+  gap: 1.8rem;
+}
+
+.footer-icon {
+  font-size: 1.8rem;
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+}
