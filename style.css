@@ -142,6 +142,7 @@ header {
   color: #fff;
   font-size: 1.15rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .posts-section {
@@ -255,4 +256,58 @@ header {
 
 .footer-copyright {
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile-nav,
+  .mobile-menu,
+  .mobile-nav__overlay {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav_links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav_link_item {
+    list-style-type: none;
+  }
+
+  .nav_link_item a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .post-card + .post-card {
+    margin: 0;
+  }
+
+  .post-card__wrapper {
+    gap: 1rem;
+  }
+
+  .posts-controls {
+    justify-content: space-between;
+  }
+
+  .posts-controls__view-all {
+    display: inherit;
+    color: var(--color-secondary);
+    cursor: pointer;
+  }
+
+  .works-section {
+    text-align: start;
+  }
 }
