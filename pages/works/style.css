@@ -116,6 +116,7 @@ header {
 
 .work-post {
   gap: 2rem;
+  cursor: pointer;
 }
 
 .work-post__info {
@@ -137,7 +138,7 @@ header {
 }
 
 .horizontal-divider {
-  margin-top: 1rem;
+  margin: 1.25rem 0;
   border: 1px solid #e0e0e0;
 }
 
