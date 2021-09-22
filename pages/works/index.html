@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Ziyad Bhombal</title>
+    <script
+      src="https://kit.fontawesome.com/a2a6ff9673.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="mobile-nav">
+          <i id="mobile-menu-toggle" class="fas fa-bars mobile-hamburger"></i>
+        </nav>
+        <nav class="mobile-menu">
+          <ul class="mobile_nav_links">
+            <div class="container">
+              <li class="mobile_nav_link_item"><a href="#">Works</a></li>
+              <li class="mobile_nav_link_item"><a href="#">Blog</a></li>
+              <li class="mobile_nav_link_item"><a href="#">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
+        <div class="mobile-nav__overlay"></div>
+        <nav class="desktop-nav">
+          <ul class="nav_links row">
+            <li class="nav_link_item">
+              <a class="current" href="/pages/works/">Works</a>
+            </li>
+            <li class="nav_link_item"><a href="/pages/blog/">Blog</a></li>
+            <li class="nav_link_item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="works-section">
+      <div class="container">
+        <h1 class="works-heading">Work</h1>
+        <div class="works-wrapper">
+          <article class="work-post row">
+            <img
+              src="/images/Rectangle 30.png"
+              alt="Work Post image"
+              class="post-img"
+            />
+            <div class="work-post__desc">
+              <h2 class="work-post__title">Designing Dashboards</h2>
+              <div class="work-post__info row">
+                <p class="work-post__date">2020</p>
+                <p class="work-post__category">Dashboard</p>
+              </div>
+              <p class="work-post__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                molestiae doloremque, nulla molestias modi mollitia asperiores
+                fugiat commodi ex ut vero iste! Labore ut quos expedita.
+              </p>
+            </div>
+          </article>
+          <hr class="horizontal-divider" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="row footer-icons">
+        <i class="fab fa-facebook-square footer-icon"></i
+        ><i class="fab fa-instagram-square footer-icon"></i
+        ><i class="fab fa-linkedin footer-icon"></i
+        ><i class="fab fa-twitter-square footer-icon"></i>
+      </div>
+      <p class="footer-copyright">Copyright ©2021 All Rights Reserved</p>
+    </footer>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
